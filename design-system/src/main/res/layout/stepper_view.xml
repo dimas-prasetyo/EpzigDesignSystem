@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnMinus"
+        android:layout_width="@dimen/size_small"
+        android:layout_height="@dimen/size_small"
+        app:contentPadding="@dimen/spacing_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bx_minus"
+        app:tint="@color/neutral_900"
+        android:background="@color/neutral_100"
+        android:foreground="@drawable/ripple_stepper"
+        app:shapeAppearance="@style/fullRounded"
+        android:clickable="true" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_small"
+        android:minWidth="50dp"
+        android:paddingHorizontal="@dimen/spacing_semi_medium"
+        android:background="@drawable/background_input"
+        android:textAppearance="@style/body"
+        app:layout_constraintStart_toEndOf="@id/btnMinus"
+        android:layout_marginStart="@dimen/margin_small"
+        android:singleLine="true"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnPlus"
+        android:layout_width="@dimen/size_small"
+        android:layout_height="@dimen/size_small"
+        app:contentPadding="@dimen/spacing_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bx_plus"
+        app:tint="@color/neutral_900"
+        android:background="@color/neutral_100"
+        android:foreground="@drawable/ripple_stepper"
+        app:shapeAppearance="@style/fullRounded"
+        app:layout_constraintStart_toEndOf="@id/input"
+        android:layout_marginStart="@dimen/margin_small"
+        android:clickable="true"/>
+
+</merge>

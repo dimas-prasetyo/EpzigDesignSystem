@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PrimaryButton" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="backgroundTint">@color/button_primary_background</item>
+        <item name="rippleColor">@color/neutral_200</item>
+        <item name="iconSize">@dimen/icon_size_small</item>
+        <item name="iconTint">@color/button_primary_content</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textColor">@color/button_primary_content</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="PrimaryButton.IconOnly" parent="Widget.Material3.Button.IconButton">
+        <item name="backgroundTint">@color/button_primary_background</item>
+        <item name="rippleColor">@color/neutral_200</item>
+        <item name="iconTint">@color/button_primary_content</item>
+        <item name="android:text">@string/empty_string</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="PrimaryButton.Big" parent="PrimaryButton">
+        <item name="android:minHeight">@dimen/size_big</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="PrimaryButton.Medium" parent="PrimaryButton">
+        <item name="android:minHeight">@dimen/size_medium</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="PrimaryButton.Small" parent="PrimaryButton">
+        <item name="android:minHeight">@dimen/size_small</item>
+        <item name="android:textAppearance">@style/subtitle</item>
+    </style>
+
+    <style name="PrimaryButton.Big.IconOnly" parent="PrimaryButton.IconOnly">
+        <item name="android:height">@dimen/size_big</item>
+        <item name="android:width">@dimen/size_big</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="PrimaryButton.Medium.IconOnly" parent="PrimaryButton.IconOnly">
+        <item name="android:height">@dimen/size_medium</item>
+        <item name="android:width">@dimen/size_medium</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="PrimaryButton.Small.IconOnly" parent="PrimaryButton.IconOnly">
+        <item name="android:height">@dimen/size_small</item>
+        <item name="android:layout_height">@dimen/size_small</item>
+        <item name="maxHeight">@dimen/size_small</item>
+        <item name="android:maxHeight">@dimen/size_small</item>
+        <item name="android:width">@dimen/size_small</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="backgroundTint">@color/button_secondary_background</item>
+        <item name="rippleColor">@color/brand_400</item>
+        <item name="iconTint">@color/button_secondary_content</item>
+        <item name="android:textColor">@color/button_secondary_content</item>
+        <item name="iconSize">@dimen/icon_size_small</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="SecondaryButton.IconOnly" parent="Widget.Material3.Button.IconButton">
+        <item name="backgroundTint">@color/button_secondary_background</item>
+        <item name="rippleColor">@color/brand_400</item>
+        <item name="iconTint">@color/button_secondary_content</item>
+        <item name="android:text">@string/empty_string</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="SecondaryButton.Big" parent="SecondaryButton">
+        <item name="android:minHeight">@dimen/size_big</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="SecondaryButton.Medium" parent="SecondaryButton">
+        <item name="android:minHeight">@dimen/size_medium</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="SecondaryButton.Small" parent="SecondaryButton">
+        <item name="android:minHeight">@dimen/size_small</item>
+        <item name="android:textAppearance">@style/subtitle</item>
+    </style>
+
+    <style name="SecondaryButton.Big.IconOnly" parent="SecondaryButton.IconOnly">
+        <item name="android:height">@dimen/size_big</item>
+        <item name="android:width">@dimen/size_big</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="SecondaryButton.Medium.IconOnly" parent="SecondaryButton.IconOnly">
+        <item name="android:height">@dimen/size_medium</item>
+        <item name="android:width">@dimen/size_medium</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="SecondaryButton.Small.IconOnly" parent="SecondaryButton.IconOnly">
+        <item name="android:height">@dimen/size_small</item>
+        <item name="android:layout_height">@dimen/size_small</item>
+        <item name="maxHeight">@dimen/size_small</item>
+        <item name="android:maxHeight">@dimen/size_small</item>
+        <item name="android:width">@dimen/size_small</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="TextPrimaryButton" parent="Widget.Material3.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/brand_400</item>
+        <item name="iconTint">@color/button_text_primary_content</item>
+        <item name="android:textColor">@color/button_text_primary_content</item>
+        <item name="iconSize">@dimen/icon_size_small</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="TextPrimaryButton.IconOnly" parent="Widget.Material3.Button.IconButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/brand_400</item>
+        <item name="iconTint">@color/button_text_primary_content</item>
+        <item name="android:text">@string/empty_string</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="TextPrimaryButton.Big" parent="TextPrimaryButton">
+        <item name="android:minHeight">@dimen/size_big</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="TextPrimaryButton.Medium" parent="TextPrimaryButton">
+        <item name="android:minHeight">@dimen/size_medium</item>
+        <item name="android:textAppearance">@style/subtitle_semi_bold</item>
+    </style>
+
+    <style name="TextPrimaryButton.Small" parent="TextPrimaryButton">
+        <item name="android:minHeight">@dimen/size_small</item>
+        <item name="android:textAppearance">@style/caption_semi_bold</item>
+    </style>
+
+    <style name="TextPrimaryButton.Big.IconOnly" parent="TextPrimaryButton.IconOnly">
+        <item name="android:height">@dimen/size_big</item>
+        <item name="android:width">@dimen/size_big</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="TextPrimaryButton.Medium.IconOnly" parent="TextPrimaryButton.IconOnly">
+        <item name="android:height">@dimen/size_medium</item>
+        <item name="android:width">@dimen/size_medium</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="TextPrimaryButton.Small.IconOnly" parent="TextPrimaryButton.IconOnly">
+        <item name="android:height">@dimen/size_small</item>
+        <item name="android:layout_height">@dimen/size_small</item>
+        <item name="maxHeight">@dimen/size_small</item>
+        <item name="android:maxHeight">@dimen/size_small</item>
+        <item name="android:width">@dimen/size_small</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="TextSecondaryButton" parent="Widget.Material3.Button.TextButton">
+        <item name="rippleColor">@color/brand_400</item>
+        <item name="iconTint">@color/button_text_secondary_content</item>
+        <item name="android:textColor">@color/button_text_secondary_content</item>
+        <item name="iconSize">@dimen/icon_size_small</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="TextSecondaryButton.IconOnly" parent="Widget.Material3.Button.IconButton">
+        <item name="rippleColor">@color/brand_400</item>
+        <item name="iconTint">@color/button_text_secondary_content</item>
+        <item name="android:text">@string/empty_string</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="TextSecondaryButton.Big" parent="TextSecondaryButton">
+        <item name="android:minHeight">@dimen/size_big</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="TextSecondaryButton.Medium" parent="TextSecondaryButton">
+        <item name="android:minHeight">@dimen/size_medium</item>
+        <item name="android:textAppearance">@style/subtitle_semi_bold</item>
+    </style>
+
+    <style name="TextSecondaryButton.Small" parent="TextSecondaryButton">
+        <item name="android:minHeight">@dimen/size_small</item>
+        <item name="android:textAppearance">@style/caption_semi_bold</item>
+    </style>
+
+    <style name="TextSecondaryButton.Big.IconOnly" parent="TextSecondaryButton.IconOnly">
+        <item name="android:height">@dimen/size_big</item>
+        <item name="android:width">@dimen/size_big</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="TextSecondaryButton.Medium.IconOnly" parent="TextSecondaryButton.IconOnly">
+        <item name="android:height">@dimen/size_medium</item>
+        <item name="android:width">@dimen/size_medium</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="TextSecondaryButton.Small.IconOnly" parent="TextSecondaryButton.IconOnly">
+        <item name="android:height">@dimen/size_small</item>
+        <item name="android:layout_height">@dimen/size_small</item>
+        <item name="maxHeight">@dimen/size_small</item>
+        <item name="android:maxHeight">@dimen/size_small</item>
+        <item name="android:width">@dimen/size_small</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+</resources>

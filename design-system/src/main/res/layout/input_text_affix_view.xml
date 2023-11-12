@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title"
+        android:textAppearance="@style/subtitle"
+        android:paddingBottom="@dimen/spacing_extra_small"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:background="@drawable/background_input">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_semi_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Rp"
+            android:textAppearance="@style/body_bold"
+            android:textColor="@color/neutral_400"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingVertical="@dimen/spacing_medium"
+            android:layout_marginHorizontal="@dimen/margin_semi_medium"
+            android:textAppearance="@style/body"
+            android:enabled="true"
+            android:hint="Put value here"
+            android:background="@drawable/background_transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/prefix"
+            app:layout_constraintEnd_toStartOf="@id/suffix"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:singleLine="true"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/suffix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_semi_medium"
+            android:text="Rp"
+            android:textAppearance="@style/body_bold"
+            android:textColor="@color/neutral_400"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        android:textAppearance="@style/caption"
+        tools:text="Error"
+        android:textColor="@color/rose_600"/>
+
+</merge>

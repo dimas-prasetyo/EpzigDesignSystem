@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title"
+        android:textAppearance="@style/subtitle"
+        android:paddingBottom="@dimen/spacing_extra_small"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingVertical="@dimen/spacing_medium"
+        android:paddingHorizontal="@dimen/spacing_semi_medium"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:background="@drawable/background_input"
+        android:textAppearance="@style/body"
+        android:enabled="true"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        android:textAppearance="@style/caption"
+        tools:text="Error"
+        android:textColor="@color/rose_600"/>
+
+</merge>

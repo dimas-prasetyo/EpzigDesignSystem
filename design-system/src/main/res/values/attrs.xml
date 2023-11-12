@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextInputLayout">
+
+        <attr name="title" format="string" />
+        <attr name="hint" format="string" />
+
+        <!-- Atribut untuk afiks teks  -->
+        <attr name="prefixText" format="string" />
+        <attr name="suffixText" format="string" />
+
+        <!-- Atribut untuk Stepper -->
+        <attr name="supportsDecimal" format="boolean"/>
+        <attr name="decimalSeparator" format="string" />
+
+        <!-- Atribut untuk teks area  -->
+        <attr name="maxLines" format="integer"/>
+    </declare-styleable>
+</resources>

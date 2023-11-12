@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding -->
+    <dimen name="spacing_extra_small">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_semi_medium">10dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_semi_medium">10dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!-- Size -->
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_semi_medium">20dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_extra_large">40dp</dimen>
+
+    <dimen name="bar_height_small">4dp</dimen>
+
+    <dimen name="size_small">36dp</dimen>
+    <dimen name="size_medium">44dp</dimen>
+    <dimen name="size_big">56dp</dimen>
+</resources>

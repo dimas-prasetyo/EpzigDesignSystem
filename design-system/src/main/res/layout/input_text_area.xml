@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title"
+        android:textAppearance="@style/subtitle"
+        android:paddingBottom="@dimen/spacing_extra_small"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:ellipsize="end"
+        android:paddingVertical="@dimen/spacing_medium"
+        android:paddingHorizontal="@dimen/spacing_semi_medium"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:background="@drawable/background_input"
+        android:textAppearance="@style/body"
+        android:gravity="top"
+        android:enabled="true"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/textAreaIcon"
+        android:layout_width="@dimen/icon_size_medium"
+        android:layout_height="@dimen/icon_size_medium"
+        android:layout_marginStart="@dimen/margin_extra_small"
+        app:contentPadding="@dimen/spacing_extra_small"
+        app:srcCompat="@drawable/bx_filter"
+        app:layout_constraintBottom_toBottomOf="@id/input"
+        app:layout_constraintEnd_toEndOf="@id/input"
+        android:background="@drawable/ripple_icon"
+        android:rotation="-45"
+        app:tint="@color/neutral_400"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        android:textAppearance="@style/caption"
+        tools:text="Error"
+        android:textColor="@color/rose_600"/>
+
+</merge>

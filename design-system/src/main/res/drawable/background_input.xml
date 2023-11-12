@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/input_disabled" android:state_enabled="false" />
+    <item android:drawable="@drawable/input_focus" android:state_focused="true" />
+    <item android:drawable="@drawable/input_error" android:state_hovered="true" />
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/neutral_500" />
+            <corners android:radius="5dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+</selector>
