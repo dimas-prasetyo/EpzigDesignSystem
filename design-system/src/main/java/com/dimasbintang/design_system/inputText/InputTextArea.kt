@@ -37,7 +37,6 @@ class InputTextArea @JvmOverloads constructor(
         val hint = a.getText(2) ?: ""
         val isEnabled = a.getBoolean(3, true)
         val maxLines = a.getInteger(4, 5)
-        println("TES MAX LINES: ${a.getInteger(4, 5)}")
 
         this.text = text.toString()
         binding.title.isVisible = title.isNotBlank()

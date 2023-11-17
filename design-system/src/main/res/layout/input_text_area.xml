@@ -21,11 +21,10 @@
         android:layout_height="wrap_content"
         android:minLines="3"
         android:ellipsize="end"
-        android:paddingVertical="@dimen/spacing_medium"
+        style="@style/InputText.Medium"
         android:paddingHorizontal="@dimen/spacing_semi_medium"
         app:layout_constraintTop_toBottomOf="@id/title"
         android:background="@drawable/background_input"
-        android:textAppearance="@style/body"
         android:gravity="top"
         android:enabled="true"/>
 

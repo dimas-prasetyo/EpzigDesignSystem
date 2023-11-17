@@ -20,11 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:paddingVertical="@dimen/spacing_medium"
+        style="@style/InputText.Medium"
         android:paddingHorizontal="@dimen/spacing_semi_medium"
         app:layout_constraintTop_toBottomOf="@id/title"
         android:background="@drawable/background_input"
-        android:textAppearance="@style/body"
         android:enabled="true"
         android:maxLines="1"
         android:singleLine="true"/>

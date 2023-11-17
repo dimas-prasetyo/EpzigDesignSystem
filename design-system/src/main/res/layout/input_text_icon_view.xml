@@ -24,16 +24,11 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/startIcon"
-            android:layout_width="@dimen/icon_size_extra_large"
-            android:layout_height="@dimen/icon_size_extra_large"
-            android:layout_marginStart="@dimen/margin_extra_small"
-            app:contentPadding="@dimen/spacing_small"
-            app:srcCompat="@drawable/bxs_box"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Icon.Medium"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@drawable/ripple_icon"
-            app:tint="@color/neutral_400"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bxs_box"/>
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input"
@@ -43,9 +38,7 @@
             android:ellipsize="end"
             android:enabled="true"
             android:hint="Put value here"
-            android:layout_marginHorizontal="@dimen/margin_extra_small"
-            android:paddingVertical="@dimen/spacing_medium"
-            android:textAppearance="@style/body"
+            style="@style/InputText.Medium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/endIcon"
             app:layout_constraintStart_toEndOf="@id/startIcon"
@@ -55,16 +48,12 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/endIcon"
-            android:layout_width="@dimen/icon_size_extra_large"
-            android:layout_height="@dimen/icon_size_extra_large"
-            app:contentPadding="@dimen/spacing_small"
-            android:layout_marginEnd="@dimen/margin_extra_small"
-            android:layout_gravity="center_vertical"
+            style="@style/Icon.Medium"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@drawable/ripple_icon"
-            app:tint="@color/neutral_400"/>
+            app:srcCompat="@drawable/bx_search"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

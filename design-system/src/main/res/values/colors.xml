@@ -42,4 +42,7 @@
     <color name="neutral_200">#E2E8F0</color>
     <color name="neutral_100">#F1F5F9</color>
     <color name="neutral_50">#F8FAFC</color>
+
+    <color name="translucent">#00000000</color>
+
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="InputText.Big" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:paddingVertical">@dimen/spacing_input_large</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="InputText.Medium" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:paddingVertical">@dimen/spacing_input_medium</item>
+        <item name="android:textAppearance">@style/body</item>
+    </style>
+
+    <style name="InputText.Small" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:paddingVertical">@dimen/spacing_input_small</item>
+        <item name="android:textAppearance">@style/subtitle_semi_bold</item>
+    </style>
+
+    <style name="TextView.Small" parent="Widget.Material3.Snackbar.TextView">
+        <item name="android:paddingVertical">@dimen/spacing_semi_small</item>
+        <item name="android:textAppearance">@style/subtitle_semi_bold</item>
+    </style>
+</resources>

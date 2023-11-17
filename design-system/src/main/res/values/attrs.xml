@@ -15,5 +15,8 @@
 
         <!-- Atribut untuk teks area  -->
         <attr name="maxLines" format="integer"/>
+
+        <!-- Atribut untuk input dropdown  -->
+        <attr name="isMultipleSelect" format="boolean"/>
     </declare-styleable>
 </resources>

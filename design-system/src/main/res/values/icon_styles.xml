@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Icon.Medium" parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="android:layout_width">@dimen/icon_size_large</item>
+        <item name="android:layout_height">@dimen/icon_size_large</item>
+        <item name="android:layout_marginStart">@dimen/margin_extra_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_extra_small</item>
+        <item name="android:background">@drawable/ripple_icon</item>
+        <item name="contentPadding">@dimen/spacing_icon_small</item>
+        <item name="tint">@color/neutral_400</item>
+    </style>
+</resources>
