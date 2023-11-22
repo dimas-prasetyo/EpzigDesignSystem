@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:strokeWidth="0dp"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/iconClose"
+            app:layout_constraintBottom_toBottomOf="@id/iconClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iconClose"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textAppearance="@style/body"
+            android:text="Dialog Title"
+            android:textColor="@color/neutral_600"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iconClose"
+            style="@style/Icon.Medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginVertical="@dimen/margin_small"
+            app:tint="@color/neutral_600"
+            app:srcCompat="@drawable/bx_x"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:text="Dialog Message"
+            android:textAppearance="@style/subtitle"
+            android:textColor="@color/neutral_600"
+            app:layout_constraintBottom_toTopOf="@id/btnConfirm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iconClose"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/SecondaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Button"
+            android:layout_marginEnd="@dimen/margin_small"
+            app:layout_constraintTop_toTopOf="@id/btnConfirm"
+            app:layout_constraintEnd_toStartOf="@id/btnConfirm"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirm"
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginVertical="@dimen/margin_medium"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

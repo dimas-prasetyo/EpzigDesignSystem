@@ -8,15 +8,15 @@ import android.view.MotionEvent
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import com.dimasbintang.design_system.R
-import com.dimasbintang.design_system.databinding.InputDropdownViewBinding
+import com.dimasbintang.design_system.databinding.InputChooseViewBinding
 import com.dimasbintang.design_system.dropdown.adapter.DropdownAdapter
 import com.dimasbintang.design_system.model.ItemDropdown
 
 @SuppressLint("ResourceType", "ClickableViewAccessibility")
-class InputDropdown @JvmOverloads constructor(
+class InputChoose @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : ConstraintLayout(context, attrs) {
-    private val binding: InputDropdownViewBinding
+    private val binding: InputChooseViewBinding
     var onSelectedItem: (item: ItemDropdown) -> Unit = {}
     private var items = arrayListOf<ItemDropdown>()
     private var isMultipleSelect = false
@@ -26,7 +26,7 @@ class InputDropdown @JvmOverloads constructor(
 
     init {
         val inflater = LayoutInflater.from(context)
-        binding = InputDropdownViewBinding.inflate(inflater, this)
+        binding = InputChooseViewBinding.inflate(inflater, this)
 
         val set = intArrayOf(
             R.attr.title,

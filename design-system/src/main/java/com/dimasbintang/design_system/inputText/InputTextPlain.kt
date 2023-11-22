@@ -8,7 +8,11 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import com.dimasbintang.design_system.R
 import com.dimasbintang.design_system.databinding.InputTextPlainViewBinding
+import com.dimasbintang.design_system.model.StyleSize.BIG
+import com.dimasbintang.design_system.model.StyleSize.MEDIUM
+import com.dimasbintang.design_system.model.StyleSize.SMALL
 import com.google.android.material.textfield.TextInputEditText
+import java.util.Locale
 
 @SuppressLint("ResourceType")
 class InputTextPlain @JvmOverloads constructor(
@@ -28,6 +32,7 @@ class InputTextPlain @JvmOverloads constructor(
             R.attr.title,
             android.R.attr.text,
             R.attr.hint,
+            R.attr.styleSize,
             android.R.attr.enabled,
         )
 
@@ -35,14 +40,14 @@ class InputTextPlain @JvmOverloads constructor(
         val title = a.getText(0) ?: ""
         val text = a.getText(1) ?: ""
         val hint = a.getText(2) ?: ""
-        val isEnabled = a.getBoolean(3, true)
+        val size = a.getText(3) ?: MEDIUM
+        val isEnabled = a.getBoolean(4, true)
 
         this.text = text.toString()
         binding.title.isVisible = title.isNotBlank()
         binding.title.text = title
         binding.input.hint = if (hint.isNotBlank()) hint else if (title.isNotBlank()) title else ""
         binding.input.isEnabled = isEnabled
-
         a.recycle()
     }
 }

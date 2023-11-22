@@ -41,36 +41,5 @@ class DropdownAdapter(context: Context, items: List<ItemDropdown>): ArrayAdapter
         return binding.root
     }
 
-    class ViewHolder(val binding: ItemDropdownBinding) {}
+    class ViewHolder(val binding: ItemDropdownBinding)
 }
-
-/*
-class DropdownAdapter(val context: Context, private val items: List<ItemDropdown>): RecyclerView.Adapter<DropdownAdapter.ViewHolder>() {
-
-
-    var onClickListener: (item: ItemDropdown, position: Int) -> Unit = {_,_->}
-    class ViewHolder(val binding: ItemDropdownBinding): RecyclerView.ViewHolder(binding.root)
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        val binding = ItemDropdownBinding.inflate(inflater, parent, false)
-        return ViewHolder(binding)
-    }
-
-    override fun getItemCount(): Int {
-        return items.size
-    }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) = with(holder){
-        val item = items[position]
-        binding.text.text = item?.text
-        binding.startIcon.isVisible = item?.startIcon != null
-        binding.endIcon.isVisible = item?.endIcon != null
-
-        binding.startIcon.setImageDrawable(item?.startIcon)
-        item?.endIcon?.let { binding.endIcon.setImageDrawable(it) }
-        val backgroundColor = if (item?.isSelected == true) R.color.brand_100 else R.color.translucent
-        binding.background.setCardBackgroundColor(context.getColor(backgroundColor))
-        onClickListener(item, position)
-    }
-}*/

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title"
+        android:textAppearance="@style/subtitle"
+        android:paddingBottom="@dimen/spacing_extra_small"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteView"
+            style="@style/InputText.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_input"
+            android:inputType="none"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/chevron"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            app:srcCompat="@drawable/bx_chevron_down"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:background="@drawable/ripple_icon"
+            app:tint="@color/neutral_400"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon"
+            style="@style/Icon.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/neutral_900"
+            app:srcCompat="@drawable/bx_bolt_circle"
+            android:visibility="gone"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/InputText.Medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintEnd_toStartOf="@id/chevron"
+            android:paddingHorizontal="@dimen/spacing_semi_medium"
+            android:textAppearance="@style/body"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>

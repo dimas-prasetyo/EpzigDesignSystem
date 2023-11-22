@@ -23,6 +23,7 @@
     <dimen name="margin_semi_medium">10dp</dimen>
     <dimen name="margin_medium">16dp</dimen>
     <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
 
     <!-- Size -->
     <dimen name="icon_size_small">16dp</dimen>
@@ -36,4 +37,6 @@
     <dimen name="size_small">36dp</dimen>
     <dimen name="size_medium">44dp</dimen>
     <dimen name="size_big">56dp</dimen>
+
+    <dimen name="max_width_dialog">550dp</dimen>
 </resources>

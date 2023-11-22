@@ -4,6 +4,7 @@
 
         <attr name="title" format="string" />
         <attr name="hint" format="string" />
+        <attr name="styleSize" format="string" />
 
         <!-- Atribut untuk afiks teks  -->
         <attr name="prefixText" format="string" />

@@ -15,7 +15,73 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.dimasbintang.design_system.dropdown.InputDropdown
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/button1"
+                android:layout_margin="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_pin"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButtonSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/button1Secondary"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@drawable/background_segmented_group_secondary">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button1Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button2Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button3Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+            <!--<com.dimasbintang.design_system.dropdown.InputDropdown
                 android:id="@+id/inputDropdownSingle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -94,7 +160,7 @@
                 android:layout_marginVertical="@dimen/margin_small"
                 app:title="Input Dropdown Multiple Select"
                 app:hint="Silahkan Pilih"
-                app:isMultipleSelect="true"/>
+                app:isMultipleSelect="true"/>-->
 
         </LinearLayout>
     </ScrollView>

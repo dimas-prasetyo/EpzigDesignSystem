@@ -16,7 +16,7 @@ class InputActivity : AppCompatActivity() {
         binding = ActivityInputBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.inputTextIcon.startIconIsClickable(false)
+        /*binding.inputTextIcon.startIconIsClickable(false)
         val itemsPertama = arrayListOf<ItemDropdown>()
         val itemsKedua = arrayListOf<ItemDropdown>()
         // Icon Text
@@ -48,6 +48,6 @@ class InputActivity : AppCompatActivity() {
         binding.inputDropdownMultiple.setItemDropdown(itemsKedua)
         binding.inputDropdownMultiple.onSelectedItem = { item ->
             Toast.makeText(this, "Terpilih: ${binding.inputDropdownMultiple.selectedItems.size}", Toast.LENGTH_SHORT).show()
-        }
+        }*/
     }
 }
