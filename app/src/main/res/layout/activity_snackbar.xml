@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SnackbarActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/successSnackbar"
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Success Snackbar"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/errorSnackbar"
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Error Snackbar"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/simpleSnackbar"
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Simple Snackbar"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/actionSnackbar"
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Action Snackbar"/>
+
+</LinearLayout>

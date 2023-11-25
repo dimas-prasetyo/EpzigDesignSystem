@@ -5,6 +5,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import com.dimasbintang.design_system.R
 import com.dimasbintang.design_system.databinding.InputTextAffixViewBinding
@@ -31,6 +32,7 @@ class InputTextAffix @JvmOverloads constructor(
             R.attr.hint,
             R.attr.prefixText,
             R.attr.suffixText,
+            R.attr.affixTint,
             android.R.attr.enabled,
         )
 
@@ -40,7 +42,8 @@ class InputTextAffix @JvmOverloads constructor(
         val hint = a.getText(2) ?: ""
         val prefixText = a.getText(3) ?: ""
         val suffixText = a.getText(4) ?: ""
-        val isEnabled = a.getBoolean(5, true)
+        val affixTint = a.getResourceId(5, 0)
+        val isEnabled = a.getBoolean(6, true)
 
         binding.title.isVisible = title.isNotBlank()
         binding.title.text = title
@@ -50,6 +53,10 @@ class InputTextAffix @JvmOverloads constructor(
         binding.prefix.text = prefixText
         binding.suffix.text = suffixText
         binding.input.isEnabled = isEnabled
+        if (affixTint > 0) {
+            binding.prefix.setTextColor(ContextCompat.getColor(context, affixTint))
+            binding.suffix.setTextColor(ContextCompat.getColor(context, affixTint))
+        }
         this.text = text.toString()
 
         setupFocusListener()

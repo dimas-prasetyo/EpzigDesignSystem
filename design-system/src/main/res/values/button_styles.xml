@@ -278,7 +278,7 @@
 
     <style name="SegmentedButtonPrimary.Small" parent="SegmentedButtonPrimary">
         <item name="android:minHeight">@dimen/size_small</item>
-        <item name="android:textAppearance">@style/subtitle</item>
+        <item name="android:textAppearance">@style/subtitle_semi_bold</item>
     </style>
 
     <style name="SegmentedButtonPrimary.IconOnly" parent="SegmentedButtonPrimary">
@@ -313,7 +313,7 @@
         <item name="maxHeight">@dimen/size_small</item>
         <item name="android:maxHeight">@dimen/size_small</item>
         <item name="android:width">@dimen/size_small</item>
-        <item name="iconSize">@dimen/icon_size_medium</item>
+        <item name="iconSize">@dimen/icon_size_small</item>
     </style>
 
     <style name="SegmentedButtonSecondary" parent="ThemeOverlay.Material3.Button.ElevatedButton">
@@ -347,5 +347,42 @@
         <item name="android:minHeight">@dimen/size_small</item>
         <item name="android:textAppearance">@style/subtitle</item>
         <item name="android:paddingVertical">@dimen/spacing_small</item>
+    </style>
+
+    <style name="SegmentedButtonSecondary.IconOnly" parent="SegmentedButtonSecondary">
+        <item name="backgroundTint">@color/button_segmented_secondary</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="iconTint">@color/text_segmented_secondary</item>
+        <item name="android:textColor">@color/text_segmented_secondary</item>
+        <item name="android:outlineSpotShadowColor">@color/shadow_segmented_secondary</item>
+        <item name="android:outlineAmbientShadowColor">@color/shadow_segmented_secondary</item>
+        <item name="android:text">@string/empty_string</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">4dp</item>
+        <item name="android:insetBottom">4dp</item>
+        <item name="android:insetLeft">4dp</item>
+        <item name="android:insetRight">4dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="SegmentedButtonSecondary.Big.IconOnly" parent="SegmentedButtonSecondary.IconOnly">
+        <item name="android:height">@dimen/size_big</item>
+        <item name="android:width">@dimen/size_big</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="SegmentedButtonSecondary.Medium.IconOnly" parent="SegmentedButtonSecondary.IconOnly">
+        <item name="android:height">@dimen/size_medium</item>
+        <item name="android:width">@dimen/size_medium</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
+    </style>
+
+    <style name="SegmentedButtonSecondary.Small.IconOnly" parent="SegmentedButtonSecondary.IconOnly">
+        <item name="android:height">@dimen/size_small</item>
+        <item name="android:layout_height">@dimen/size_small</item>
+        <item name="maxHeight">@dimen/size_small</item>
+        <item name="android:maxHeight">@dimen/size_small</item>
+        <item name="android:width">@dimen/size_small</item>
+        <item name="iconSize">@dimen/icon_size_medium</item>
     </style>
 </resources>

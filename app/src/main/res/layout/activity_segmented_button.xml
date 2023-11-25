@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegmentedButtonActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Primary Style"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Text Only"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/primaryTextOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/primaryTextOnly1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryTextOnly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryTextOnly2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryTextOnly3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Text Icon"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/primaryTextIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/primaryTexIcon1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryTexIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left"
+                    app:icon="@drawable/bx_align_left"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryTextIcon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Middle"
+                    app:icon="@drawable/bx_align_middle"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryTextIcon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Right"
+                    app:icon="@drawable/bx_align_right"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Icon Only"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/primaryIconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/primaryIconOnly1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryIconOnly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_left"
+                    style="@style/SegmentedButtonPrimary.Medium.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryIconOnly2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_middle"
+                    style="@style/SegmentedButtonPrimary.Medium.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/primaryIconOnly3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_right"
+                    style="@style/SegmentedButtonPrimary.Medium.IconOnly"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Secondary Style"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Text Only"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/SecondaryTextOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/SecondaryTextOnly1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:background="@drawable/background_segmented_group_secondary">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryTextOnly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryTextOnly2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryTextOnly3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Text Icon"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/SecondaryTextIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/SecondaryTexIcon1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:background="@drawable/background_segmented_group_secondary">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryTexIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left"
+                    app:icon="@drawable/bx_align_left"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryTextIcon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Middle"
+                    app:icon="@drawable/bx_align_middle"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryTextIcon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Right"
+                    app:icon="@drawable/bx_align_right"
+                    style="@style/SegmentedButtonSecondary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Icon Only"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/SecondaryIconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@id/SecondaryIconOnly1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:background="@drawable/background_segmented_group_secondary">
+
+                <com.google.android.material.button.MaterialButton
+                android:id="@+id/SecondaryIconOnly1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/bx_align_left"
+                style="@style/SegmentedButtonSecondary.Medium.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryIconOnly2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_middle"
+                    style="@style/SegmentedButtonSecondary.Medium.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SecondaryIconOnly3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_right"
+                    style="@style/SegmentedButtonSecondary.Medium.IconOnly"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Size"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Small"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonPrimary.Small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonPrimary.Small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonPrimary.Small"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_small"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_left"
+                    style="@style/SegmentedButtonPrimary.Small.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_middle"
+                    style="@style/SegmentedButtonPrimary.Small.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_right"
+                    style="@style/SegmentedButtonPrimary.Small.IconOnly"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Medium"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_left"
+                    style="@style/SegmentedButtonPrimary.Medium.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_middle"
+                    style="@style/SegmentedButtonPrimary.Medium.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_right"
+                    style="@style/SegmentedButtonPrimary.Medium.IconOnly"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Big"
+                android:textAppearance="@style/subtitle"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonPrimary.Big"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonPrimary.Big"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonPrimary.Big"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_left"
+                    style="@style/SegmentedButtonPrimary.Big.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_middle"
+                    style="@style/SegmentedButtonPrimary.Big.IconOnly"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/bx_align_right"
+                    style="@style/SegmentedButtonPrimary.Big.IconOnly"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Multiple Select"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="false"
+                app:selectionRequired="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    style="@style/SegmentedButtonPrimary.Medium"/>
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

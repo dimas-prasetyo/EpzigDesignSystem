@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputChooseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Input Text Affix"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.dimasbintang.design_system.dropdown.InputDropdown
+                android:id="@+id/inputDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Dropdown Single Select"
+                app:hint="Silahkan Pilih"
+                app:isMultipleSelect="false"/>
+
+            <com.dimasbintang.design_system.dropdown.InputDropdown
+                android:id="@+id/inputDropdownMultiple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Dropdown Multiple Select"
+                app:hint="Silahkan Pilih"
+                app:isMultipleSelect="true"/>
+
+            <!--<com.dimasbintang.design_system.dropdown.InputDropdown
+                android:id="@+id/inputDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Dialog Single Select"
+                app:hint="Silahkan Pilih"
+                app:isMultipleSelect="false"/>
+
+            <com.dimasbintang.design_system.dropdown.InputDropdown
+                android:id="@+id/inputDialogMultiple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Dialog Multiple Select"
+                app:hint="Silahkan Pilih"
+                app:isMultipleSelect="true"/>
+
+            <com.dimasbintang.design_system.dropdown.InputDropdown
+                android:id="@+id/inputBottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Bottom Sheet Single Select"
+                app:hint="Silahkan Pilih"
+                app:isMultipleSelect="false"/>
+
+            <com.dimasbintang.design_system.dropdown.InputDropdown
+                android:id="@+id/inputBottomSheetMultiple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Bottom Sheet Multiple Select"
+                app:hint="Silahkan Pilih"
+                app:isMultipleSelect="true"/>-->
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

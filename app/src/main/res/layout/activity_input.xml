@@ -15,7 +15,166 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButtonToggleGroup
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Input Text Plain"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextPlain
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input text with title"
+                app:hint="Input Text Plain"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextPlain
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:hint="Without title"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Input Text Icon"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextIcon
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:drawableEnd="@drawable/bx_x"
+                app:title="Only End Icon"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextIcon
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:drawableStart="@drawable/bx_search"
+                app:title="Only Start Icon"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextIcon
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:drawableStart="@drawable/bx_search"
+                android:drawableEnd="@drawable/bx_x"
+                app:title="Both Icon"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextIcon
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:drawableEnd="@drawable/bx_x"
+                android:drawableTint="@color/rose_600"
+                app:title="Icon with Tint"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextIcon
+                android:id="@+id/inputNonClickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:drawableStart="@drawable/bx_search"
+                android:drawableEnd="@drawable/bx_x"
+                app:title="Non Clickable"
+                app:iconClickable="false"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextIcon
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:drawableEnd="@drawable/bx_x"
+                app:hint="Without tilte"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Input Text Affix"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextAffix
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Text Suffix"
+                app:suffixText="Kg"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextAffix
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Text Prefix"
+                app:prefixText="$"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextAffix
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="Input Text Affix"
+                app:prefixText="$"
+                app:suffixText="Kg"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextAffix
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:title="With tint"
+                app:prefixText="Rp"
+                app:suffixText="Kg"
+                app:affixTint="@color/rose_600"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextAffix
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:hint="Without title"
+                app:suffixText="Kg"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:text="Input Text Area"
+                android:textAppearance="@style/body_bold"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextArea
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:maxLines="7"
+                app:title="Input Text Area"/>
+
+            <com.dimasbintang.design_system.inputText.InputTextArea
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_marginVertical="@dimen/margin_small"
+                app:maxLines="7"
+                app:hint="Input Text Area without title"/>
+
+            <!--<com.google.android.material.button.MaterialButtonToggleGroup
                 android:id="@+id/toggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,7 +239,7 @@
                     android:text="Button 3"
                     style="@style/SegmentedButtonSecondary.Medium"/>
 
-            </com.google.android.material.button.MaterialButtonToggleGroup>
+            </com.google.android.material.button.MaterialButtonToggleGroup>-->
             <!--<com.dimasbintang.design_system.dropdown.InputDropdown
                 android:id="@+id/inputDropdownSingle"
                 android:layout_width="match_parent"

@@ -36,6 +36,7 @@ class InputTextIcon @JvmOverloads constructor(
             android.R.attr.drawableStart,
             android.R.attr.drawableEnd,
             android.R.attr.drawableTint,
+            R.attr.iconClickable,
             android.R.attr.enabled,
         )
 
@@ -46,7 +47,8 @@ class InputTextIcon @JvmOverloads constructor(
         val startIcon = a.getDrawable(3)
         val endIcon = a.getDrawable(4)
         val iconTint = a.getResourceId(5, 0)
-        val isEnabled = a.getBoolean(6, true)
+        val isIconClickable = a.getBoolean(6, true)
+        val isEnabled = a.getBoolean(7, true)
 
         binding.title.isVisible = title.isNotBlank()
         binding.title.text  = title
@@ -60,6 +62,13 @@ class InputTextIcon @JvmOverloads constructor(
             binding.startIcon.setColorFilter(ContextCompat.getColor(context, iconTint))
             binding.endIcon.setColorFilter(ContextCompat.getColor(context, iconTint))
         }
+        if (startIcon == null) {
+            val paddingHorizontal = resources.getDimensionPixelSize(R.dimen.spacing_semi_medium)
+            val paddingVertical = resources.getDimensionPixelSize(R.dimen.spacing_input_medium)
+            binding.input.setPadding(paddingHorizontal, paddingVertical, paddingHorizontal, paddingVertical)
+        }
+        binding.startIcon.isClickable = isIconClickable
+        binding.endIcon.isClickable = isIconClickable
         this.text = text.toString()
 
         setupFocusListener()

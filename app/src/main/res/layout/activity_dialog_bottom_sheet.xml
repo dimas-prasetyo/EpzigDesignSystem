@@ -5,62 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".DialogBottomSheetActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToInputField"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:text="Input field"/>
+        android:text="Dialog Confirmation"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToInputPassword"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:text="Input Password"/>
+        android:text="Dialog List Text Only"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToInputDropdown"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:text="Input Dropdown"/>
+        android:text="Dialog List Text Left Icon"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToButton"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:text="Button"/>
+        android:text="Dialog Text Right Icon"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToSegmentedButton"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:text="Segmented Button"/>
+        android:text="Dialog Text Both Icon"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToSnackbar"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:text="Snackbar"/>
+        android:text="Bottom Sheet Text Only"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnToDialog"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
-        android:text="Dialog/Bottom sheet"/>
+        android:text="Bottom Sheet Text Left Icon"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Bottom Sheet Text Right Icon"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Bottom Sheet Text Both Icon"/>
 
 </LinearLayout>

@@ -9,6 +9,7 @@
         <!-- Atribut untuk afiks teks  -->
         <attr name="prefixText" format="string" />
         <attr name="suffixText" format="string" />
+        <attr name="affixTint" format="color"/>
 
         <!-- Atribut untuk Stepper -->
         <attr name="supportsDecimal" format="boolean"/>
@@ -19,5 +20,8 @@
 
         <!-- Atribut untuk input dropdown  -->
         <attr name="isMultipleSelect" format="boolean"/>
+
+        <!-- Atribut untuk input icon  -->
+        <attr name="iconClickable" format="boolean"/>
     </declare-styleable>
 </resources>
