@@ -15,24 +15,5 @@ class ButtonActivity : AppCompatActivity() {
         binding = ActivityButtonBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        /*binding.primaryButton.setOnClickListener {
-            val icon = ContextCompat.getDrawable(this, com.dimasbintang.design_system.R.drawable.bx_alarm)
-            //showSimpleSnackbar(this, "Alarm set", icon)
-            showSuccessSnackbar(this)
-        }
-
-        binding.primaryIconButton.setOnClickListener {
-            *//*showSnackbarAction(this, "TEs", "Pilih") {
-                showErrorSnackbar(this)
-            }*//*
-            val dialog = DialogConfirmation("Tes Title", "Ini message")
-            dialog.show(supportFragmentManager, null)
-            dialog.positiveListener = {
-
-            }
-            dialog.negativeListener = {
-                dialog.dismiss()
-            }
-        }*/
     }
 }

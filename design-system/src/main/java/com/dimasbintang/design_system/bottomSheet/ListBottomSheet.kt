@@ -23,10 +23,8 @@ class ListBottomSheet(
     private val context: Context,
     private val items: List<ItemDropdown>,
     private val isMultipleSelect: Boolean = true,
-    private val btnText: String = "Done"
+    private val btnText: String = "Confirm"
 ): BottomSheetDialogFragment() {
-    //private var _binding: ListBottomSheetViewBinding? = null
-    //internal val binding get() = _binding!!
     private lateinit var binding: ListBottomSheetViewBinding
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<View>
     private lateinit var adapter: ListAdapter

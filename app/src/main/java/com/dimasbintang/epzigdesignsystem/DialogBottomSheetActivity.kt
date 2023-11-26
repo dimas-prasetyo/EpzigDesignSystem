@@ -2,6 +2,9 @@ package com.dimasbintang.epzigdesignsystem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dimasbintang.design_system.bottomSheet.ListBottomSheet
+import com.dimasbintang.design_system.dialog.DialogConfirmation
+import com.dimasbintang.design_system.dialog.ListDialog
 import com.dimasbintang.design_system.helper.DropdownMapper.addItemDropdown
 import com.dimasbintang.design_system.helper.DropdownMapper.toDrawable
 import com.dimasbintang.design_system.model.ItemDropdown
@@ -47,7 +50,93 @@ class DialogBottomSheetActivity : AppCompatActivity() {
     }
 
     private fun setOnClickListener() {
+        binding.dialogConfirmation.setOnClickListener {
+            val dialog = DialogConfirmation("Title", "Message dialog confirmation", "Confirm", "Cancel")
+            dialog.positiveListener = {
+                // action positive button got click
+                dialog.dismiss()
+            }
+            dialog.negativeListener = {
+                // action positive button got click
+                dialog.dismiss()
+            }
+            dialog.show(supportFragmentManager, null)
 
+        }
+        binding.dialogTextOnly.setOnClickListener {
+            val dialog = ListDialog(this, textOnlyItems, false)
+            dialog.confirmListener = {
+                // action positive button got click
+            }
+            dialog.show(supportFragmentManager, null)
+        }
+        binding.dialogLeftIcon.setOnClickListener {
+            val dialog = ListDialog(this, leftIconItems, false)
+            dialog.confirmListener = {
+                // action positive button got click
+            }
+            dialog.show(supportFragmentManager, null)
+        }
+        binding.dialogRightIcon.setOnClickListener {
+            val dialog = ListDialog(this, rightIconItems, false)
+            dialog.confirmListener = {
+                // action positive button got click
+            }
+            dialog.show(supportFragmentManager, null)
+        }
+        binding.dialogBothIcon.setOnClickListener {
+            val dialog = ListDialog(this, bothIconItems, false)
+            dialog.confirmListener = {
+                // action positive button got click
+            }
+            dialog.show(supportFragmentManager, null)
+        }
+        binding.dialogMultiple.setOnClickListener {
+            val dialog = ListDialog(this, textOnlyItems, true)
+            dialog.confirmListener = {
+                // action positive button got click
+            }
+            dialog.show(supportFragmentManager, null)
+        }
+        binding.bottomSheetText.setOnClickListener {
+            val bottomSheet = ListBottomSheet(this, textOnlyItems, false)
+            bottomSheet.confirmListener = {
+                // action positive button got click
+            }
+            bottomSheet.show(supportFragmentManager, null)
+        }
+        binding.bottomSheetLeftIcon.setOnClickListener {
+            val bottomSheet = ListBottomSheet(this, leftIconItems, false)
+            bottomSheet.confirmListener = {
+                // action positive button got click
+            }
+            bottomSheet.show(supportFragmentManager, null)
+
+        }
+        binding.bottomSheetRightIcon.setOnClickListener {
+            val bottomSheet = ListBottomSheet(this, rightIconItems, false)
+            bottomSheet.confirmListener = {
+                // action positive button got click
+            }
+            bottomSheet.show(supportFragmentManager, null)
+
+        }
+        binding.bottomSheetBothIcon.setOnClickListener {
+            val bottomSheet = ListBottomSheet(this, bothIconItems, false)
+            bottomSheet.confirmListener = {
+                // action positive button got click
+            }
+            bottomSheet.show(supportFragmentManager, null)
+
+        }
+        binding.bottomSheetMultiple.setOnClickListener {
+            val bottomSheet = ListBottomSheet(this, textOnlyItems, true)
+            bottomSheet.confirmListener = {
+                // action positive button got click
+            }
+            bottomSheet.show(supportFragmentManager, null)
+
+        }
     }
 
 }

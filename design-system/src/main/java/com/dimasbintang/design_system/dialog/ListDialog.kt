@@ -29,6 +29,7 @@ class ListDialog(
     private lateinit var binding: DialogListBinding
     private lateinit var adapter: ListAdapter
     var confirmListener: () -> Unit = {}
+    var cancelListener: () -> Unit = {}
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,7 +45,7 @@ class ListDialog(
         binding.title.text = title
         binding.title.isVisible = title.isNotBlank()
         binding.btnConfirm.text = positiveText.takeIf { it.isNotBlank() } ?: "Confirm"
-        binding.btnCancel.text = negativeText.takeIf { it.isNotBlank() } ?: "Cancel"
+        binding.btnCancel.text = negativeText.takeIf { it.isNotBlank() } ?: "Clear"
 
         dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
@@ -87,6 +88,7 @@ class ListDialog(
         binding.btnCancel.setOnClickListener {
             items.forEach { it.isSelected = false }
             adapter.notifyDataSetChanged()
+            cancelListener()
             dialog?.dismiss()
         }
         binding.btnConfirm.setOnClickListener {

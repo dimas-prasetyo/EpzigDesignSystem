@@ -8,6 +8,7 @@
     tools:context=".DialogBottomSheetActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogConfirmation"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
         android:text="Dialog Confirmation"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogTextOnly"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +24,7 @@
         android:text="Dialog List Text Only"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogLeftIcon"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,6 +32,7 @@
         android:text="Dialog List Text Left Icon"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogRightIcon"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,6 +40,7 @@
         android:text="Dialog Text Right Icon"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogBothIcon"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,6 +48,15 @@
         android:text="Dialog Text Both Icon"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogMultiple"
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Dialog List Multiple Select"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottomSheetText"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,6 +64,7 @@
         android:text="Bottom Sheet Text Only"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottomSheetLeftIcon"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,6 +72,7 @@
         android:text="Bottom Sheet Text Left Icon"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottomSheetRightIcon"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,10 +80,19 @@
         android:text="Bottom Sheet Text Right Icon"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottomSheetBothIcon"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
         android:text="Bottom Sheet Text Both Icon"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottomSheetMultiple"
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Bottom Sheet Multiple Select"/>
 
 </LinearLayout>
