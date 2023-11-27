@@ -27,4 +27,3 @@ dependencies {
 *   [Input Text Icon](#input-text-icon)
 *   [Input Text Area](#input-text-area)
 *   [Input Text Dropdown](#input-text-dropdown)
-*   [Input Text Choose](#input-text-choose)
