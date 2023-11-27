@@ -1,9 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
 }
-
+apply plugin: 'maven-publish'
 android {
     namespace 'com.dimasbintang.design_system'
     compileSdk 33
@@ -46,16 +45,12 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            maven(MavenPublication) {
+            release(MavenPublication) {
                 from components.release
-
                 groupId = 'com.github.dimas-prasetyo'
                 artifactId = 'epzig-design-system'
                 version '1.0.0'
             }
-        }
-        repositories {
-            mavenLocal()
         }
     }
 }
