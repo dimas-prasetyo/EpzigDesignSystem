@@ -51,7 +51,7 @@ Element          | Attribute                   | Default value            | Data
 **Hint**         | `app:hint`                  | `null`                   | String               | Set hint of input text
 
 
-## Input Text Plain
+## Input Text Password
 ![Input text plain with title](assets/buttons/elevated_button_anatomy.png)
 
 In the layout:
