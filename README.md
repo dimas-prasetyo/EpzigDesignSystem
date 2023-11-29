@@ -20,6 +20,8 @@ dependencies {
 ```
 
 # Contents
+*   [Inputs](assets/inputs/inputs.md)
+*   
 # Input
 **Contents**
 
