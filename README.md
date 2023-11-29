@@ -31,9 +31,7 @@ dependencies {
 *   [Input Text Dropdown](#input-text-dropdown)
 
 ## Input Text Plain
-![Input text plain with title](assets/inputs/input_text_plain_with_title.gif)
-
-![Input text plain without title](assets/inputs/input_text_plain_without_title.gif)
+<img width="270" height="550" alt="Input Text Plain with Title" src="assets/inputs/input_text_plain_with_title.gif" />      <img width="270" height="550" alt="Input Text Plain without Title" src="assets/inputs/input_text_plain_without_title.gif" />
 
 
 In the layout:
@@ -55,7 +53,7 @@ Element          | Attribute                   | Default value            | Data
 
 
 ## Input Text Password
-![Input text plain with title](assets/inputs/input_password.gif)
+<img width="270" height="550" alt="Input Text Plain with Title" src="assets/inputs/input_password.gif" /> 
 
 In the layout:
 ```xml
@@ -75,7 +73,8 @@ Element          | Attribute                   | Default value            | Data
 **Hint**         | `app:hint`                  | `null`                   | String               | Set hint of input text
 
 ## Input Text Affix
-![Input text affix](assets/inputs/input_affix.png)
+<img width="270" height="290" alt="Input Text Plain with Title" src="assets/inputs/input_affix.png" /> 
+
 
 In the layout:
 ```xml
@@ -100,7 +99,7 @@ Element              | Attribute                   | Default value            | 
 
 
 ## Input Text Icon
-![Input text affix](assets/inputs/input_text_icon.gif)
+<img width="270" height="550" alt="Input Text Plain with Title" src="assets/inputs/input_text_icon.gif" /> 
 
 In the layout:
 ```xml
@@ -134,7 +133,7 @@ binding.inputIcon.endIconIsClickable(false)
 ```
 
 ## Input Text Area
-![Input text area](assets/inputs/input_text_area.gif)
+<img width="270" height="550" alt="Input Text Plain with Title" src="assets/inputs/input_text_area.gif" /> 
 
 In the layout:
 ```xml
@@ -157,7 +156,7 @@ Element              | Attribute                   | Default value            | 
 
 
 ## Input Text Dropdown
-![Input text dropdown](assets/inputs/input_dropdown.gif)
+<img width="270" height="550" alt="Input Text Plain with Title" src="assets/inputs/input_dropdown.gif" /> 
 
 In the layout:
 ```xml
