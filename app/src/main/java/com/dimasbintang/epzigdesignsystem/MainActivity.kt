@@ -45,5 +45,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DialogBottomSheetActivity::class.java)
             startActivity(intent)
         }
+        binding.btnToPreview.setOnClickListener {
+            val intent = Intent(this, PreviewActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

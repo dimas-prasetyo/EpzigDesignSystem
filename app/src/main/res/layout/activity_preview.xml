@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewActivity"
+    android:orientation="vertical">
+
+    <!--<com.dimasbintang.design_system.inputText.InputTextPlain
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        app:title="Title"
+        app:hint="Input Text Plain"/>-->
+
+    <!--<com.dimasbintang.design_system.inputText.InputTextPlain
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        app:hint="Input Text Plain"/>-->
+
+    <!--<com.dimasbintang.design_system.inputText.InputPassword
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        app:title="Title"
+        app:hint="Input password" />-->
+
+    <!--<com.dimasbintang.design_system.inputText.InputTextAffix
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        app:title="Title"
+        app:hint="Input Text Suffix"
+        app:suffixText="Kg"/>
+
+    <com.dimasbintang.design_system.inputText.InputTextAffix
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        app:title="Title"
+        app:hint="Input Text Prefix"
+        app:prefixText="$"/>
+
+    <com.dimasbintang.design_system.inputText.InputTextAffix
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        app:title="Title"
+        app:hint="Input Text Affix"
+        app:prefixText="$"
+        app:suffixText="Kg"
+        app:affixTint="#000000"/>-->
+
+    <!--<com.dimasbintang.design_system.inputText.InputTextIcon
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        android:drawableEnd="@drawable/bx_x"
+        app:title="Title"
+        app:hint="Only End Icon"/>
+
+    <com.dimasbintang.design_system.inputText.InputTextIcon
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        android:drawableStart="@drawable/bx_search"
+        app:title="Title"
+        app:hint="Only Start Icon"/>
+
+    <com.dimasbintang.design_system.inputText.InputTextIcon
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        android:drawableStart="@drawable/bx_search"
+        android:drawableEnd="@drawable/bx_x"
+        app:title="Title"
+        app:hint="Both Icon"/>-->
+
+    <com.dimasbintang.design_system.inputText.InputTextArea
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginVertical="@dimen/margin_small"
+        app:maxLines="7"
+        app:title="Title"
+        app:hint="Input Text Area"/>
+</LinearLayout>
