@@ -1,4 +1,4 @@
-# Input
+# Inputs
 **Contents**
 
 *   [Input Text Plain](#input-text-plain)
