@@ -20,8 +20,9 @@ dependencies {
 ```
 
 # Contents
+*   [Buttons](assets/button/buttons.md)
+*   [Dialog/Bottom Sheet](assets/dialog_bottom_sheet.md)
 *   [Icon](assets/icons.md)
 *   [Inputs](assets/inputs/inputs.md)
-*   [Buttons](assets/button/buttons.md)
 *   [Snackbar](assets/snackbar.md)
-*   [Dialog/Bottom Sheet](assets/dialog_bottom_sheet.md)
+*   [Typography](assets/typography.md)
