@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PreviewActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <!--<com.dimasbintang.design_system.inputText.InputTextPlain
         android:layout_width="match_parent"
@@ -87,12 +88,429 @@
         app:title="Title"
         app:hint="Both Icon"/>-->
 
-    <com.dimasbintang.design_system.inputText.InputTextArea
+    <!--<com.dimasbintang.design_system.inputText.InputTextArea
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_medium"
         android:layout_marginVertical="@dimen/margin_small"
         app:maxLines="7"
         app:title="Title"
-        app:hint="Input Text Area"/>
+        app:hint="Input Text Area"/>-->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primary"
+        android:textAppearance="@style/body"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_medium"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Medium"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/primaryButton"
+            style="@style/PrimaryButton.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Big"
+            android:layout_gravity="bottom"/>
+    </GridLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secondary"
+        android:textAppearance="@style/body"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/SecondaryButton.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/SecondaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Medium"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/SecondaryButton.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Big"
+            android:layout_gravity="bottom"/>
+    </GridLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primary Text"
+        android:textAppearance="@style/body"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/TextPrimaryButton.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/TextPrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Medium"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/TextPrimaryButton.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Big"
+            android:layout_gravity="bottom"/>
+    </GridLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secondary Text"
+        android:textAppearance="@style/body"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/TextSecondaryButton.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/TextSecondaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Medium"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_gravity="bottom"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/TextSecondaryButton.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Big"
+            android:layout_gravity="bottom"/>
+    </GridLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Icon Gravity"
+        android:textAppearance="@style/body"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:icon="@drawable/bx_plus_circle"
+            app:iconGravity="textStart"
+            android:text="Text Start"
+            android:layout_marginEnd="@dimen/margin_small"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:icon="@drawable/bx_plus_circle"
+            app:iconGravity="textEnd"
+            android:text="Text End"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:icon="@drawable/bx_plus_circle"
+            app:iconGravity="start"
+            android:text="Start"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:icon="@drawable/bx_plus_circle"
+            app:iconGravity="end"
+            android:text="End"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:icon="@drawable/bx_plus_circle"
+            app:iconGravity="top"
+            android:text="Top"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/PrimaryButton.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:icon="@drawable/bx_plus_circle"
+            app:iconGravity="textTop"
+            android:text="Text Top"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+    </GridLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Icon Only"
+        android:textAppearance="@style/body"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primary"
+                android:textAppearance="@style/subtitle"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/PrimaryButton.Big.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/PrimaryButton.Medium.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/PrimaryButton.Small.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:layout_weight="1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Secondary"
+                android:textAppearance="@style/subtitle"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SecondaryButton.Big.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SecondaryButton.Medium.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SecondaryButton.Small.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_medium">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primary Text"
+                android:textAppearance="@style/subtitle"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/TextPrimaryButton.Big.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/TextPrimaryButton.Medium.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/TextPrimaryButton.Small.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:layout_weight="1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Secondary Text"
+                android:textAppearance="@style/subtitle"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/TextSecondaryButton.Big.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/TextSecondaryButton.Medium.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/TextSecondaryButton.Small.IconOnly"
+                    app:icon="@drawable/bx_cog"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="@dimen/margin_small"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </GridLayout>
+
 </LinearLayout>
