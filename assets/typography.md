@@ -1,6 +1,6 @@
 # Typography
 
-<img width="270" height="550" alt="Input Text Plain with Title" src="input_password.gif" /> 
+<img width="270" height="550" alt="Input Text Plain with Title" src="typography.jpg" /> 
 
 In the layout:
 ```xml
