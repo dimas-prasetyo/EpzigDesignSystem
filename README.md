@@ -1,6 +1,6 @@
 # EpzigDesignSystem
 
-Required compileSdk 31
+Required compileSdk 33
 # Getting started
 Step 1. Add the JitPack repository to your build file. Add it in your root setting.gradle at the end of repositories:
 ```gradle
@@ -20,9 +20,9 @@ dependencies {
 ```
 
 # Contents
-*   [Buttons](assets/button/buttons.md)
-*   [Dialog/Bottom Sheet](assets/dialog_bottom_sheet.md)
+*   [Buttons](assets/buttons/buttons.md)
+*   [Dialog/Bottom Sheet](assets/dialogs/dialogs.md)
 *   [Icon](assets/icons.md)
 *   [Inputs](assets/inputs/inputs.md)
-*   [Snackbar](assets/snackbar.md)
+*   [Snackbar](assets/snackbars/snackbars.md)
 *   [Typography](assets/typography.md)
