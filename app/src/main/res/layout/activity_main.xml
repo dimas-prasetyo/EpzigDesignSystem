@@ -64,6 +64,14 @@
         android:text="Dialog/Bottom sheet"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnToTypography"
+        style="@style/TextPrimaryButton.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Typography"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnToPreview"
         style="@style/TextPrimaryButton.Big"
         android:layout_width="match_parent"
