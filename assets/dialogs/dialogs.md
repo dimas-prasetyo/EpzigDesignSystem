@@ -1,27 +1,12 @@
 # Dialogs
 **Contents**
 
-*   [Create Custom List](#create-custom-list)
 *   [Dialog Confirmation](#dialog-confirmation)
+*   [Create Custom List](#create-custom-list)
 *   [Dialog List](#dialog_list)
 *   [Dialog List Multiple](#dialog_list_multiple_select)
 *   [Bottom Sheet List](#bottom-sheet-list)
 *   [Bottom Sheet List Multiple Select](#bottom-sheet-list_multiple_select)
-
-## Create Custom List
-
-```kt
-import com.dimasbintang.design_system.helper.DropdownMapper.addItemDropdown
-import com.dimasbintang.design_system.helper.BoxiconMapper.getDrawableBoxicon
-import com.dimasbintang.design_system.model.ItemDropdown
-
-val items = arrayListOf<ItemDropdown>()
-items.addItemDropdown("Alarm") // item only contains text
-items.addItemDropdown("Alarm", getDrawableBoxicon(this, "bx_alarm")) // item with start icon
-items.addItemDropdown("Alarm", null, getDrawableBoxicon(this, "bx_alarm")) // item with end icon
-items.addItemDropdown("Alarm", getDrawableBoxicon(this, "bx_alarm"), getDrawableBoxicon(this, "bx_plus")) // item with both start and end icon
-// getDrawableBoxicon(this, "icon_name")) function for get drawable by name
-```
 
 ## Dialog Confirmation
 <img width="270" height="550" alt="Input Text Plain with Title" src="dialog_confirmation.gif" /> 
@@ -38,6 +23,21 @@ dialog.negativeListener = {
     dialog.dismiss()
 }
 dialog.show(supportFragmentManager, null)
+```
+
+## Create Custom List
+
+```kt
+import com.dimasbintang.design_system.helper.DropdownMapper.addItemDropdown
+import com.dimasbintang.design_system.helper.BoxiconMapper.getDrawableBoxicon
+import com.dimasbintang.design_system.model.ItemDropdown
+
+val items = arrayListOf<ItemDropdown>()
+items.addItemDropdown("Alarm") // item only contains text
+items.addItemDropdown("Alarm", getDrawableBoxicon(this, "bx_alarm")) // item with start icon
+items.addItemDropdown("Alarm", null, getDrawableBoxicon(this, "bx_alarm")) // item with end icon
+items.addItemDropdown("Alarm", getDrawableBoxicon(this, "bx_alarm"), getDrawableBoxicon(this, "bx_plus")) // item with both start and end icon
+// getDrawableBoxicon(this, "icon_name")) function for get drawable by name
 ```
 
 ## Dialog List 
