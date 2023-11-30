@@ -9,7 +9,9 @@
 *   [Input Text Dropdown](#input-text-dropdown)
 
 ## Input Text Plain
-<img width="270" height="550" alt="Input Text Plain with Title" src="input_text_plain_with_title.gif" />      <img width="270" height="550" alt="Input Text Plain without Title" src="input_text_plain_without_title.gif" />
+With title                                                             | Without title      
+---------------------------------------------------------------------- | --------------------------------------------------------------------------------- 
+<img width="270" height="550" alt="Input Text Plain with Title" src="input_text_plain_with_title.gif" /> | <img width="270" height="550" alt="Input Text Plain without Title" src="input_text_plain_without_title.gif" />
 
 In the layout:
 ```xml
