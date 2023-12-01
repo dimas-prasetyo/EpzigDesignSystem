@@ -1,7 +1,7 @@
 # EpzigDesignSystem
 
 Required:
-compileSdk 31
+compileSdk 34
 minSdk 28
 
 
