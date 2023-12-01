@@ -24,6 +24,7 @@
                 android:layout_marginTop="@dimen/margin_small"/>
 
             <com.dimasbintang.design_system.inputText.InputTextPlain
+                android:id="@+id/inputTextPlain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_medium"
@@ -47,6 +48,7 @@
                 android:layout_marginTop="@dimen/margin_medium"/>
 
             <com.dimasbintang.design_system.inputText.InputTextIcon
+                android:id="@+id/inputTextIcon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_medium"
@@ -108,6 +110,7 @@
                 android:layout_marginTop="@dimen/margin_medium"/>
 
             <com.dimasbintang.design_system.inputText.InputTextAffix
+                android:id="@+id/inputTextSuffix"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_medium"
@@ -159,6 +162,7 @@
                 android:layout_marginTop="@dimen/margin_medium"/>
 
             <com.dimasbintang.design_system.inputText.InputTextArea
+                android:id="@+id/inputTextArea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_medium"

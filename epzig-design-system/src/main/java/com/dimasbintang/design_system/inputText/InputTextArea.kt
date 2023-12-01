@@ -8,12 +8,14 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import com.dimasbintang.design_system.R
 import com.dimasbintang.design_system.databinding.InputTextAreaBinding
+import com.google.android.material.textfield.TextInputEditText
 
 @SuppressLint("ResourceType")
 class InputTextArea @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : ConstraintLayout(context, attrs) {
     private val binding: InputTextAreaBinding
+    var editText: TextInputEditText
 
     var text: String
         get() = binding.input.text.toString()
@@ -22,6 +24,7 @@ class InputTextArea @JvmOverloads constructor(
     init {
         val inflater = LayoutInflater.from(context)
         binding = InputTextAreaBinding.inflate(inflater, this)
+        editText = binding.input
 
         val set = intArrayOf(
             R.attr.title,

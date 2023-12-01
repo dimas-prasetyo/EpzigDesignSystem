@@ -18,6 +18,7 @@ import com.dimasbintang.design_system.textWatcher.PasswordTextWatcher
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.ShapeAppearanceModel
+import com.google.android.material.textfield.TextInputEditText
 
 @SuppressLint("ResourceType")
 class InputPassword @JvmOverloads constructor(
@@ -25,6 +26,7 @@ class InputPassword @JvmOverloads constructor(
 ) : ConstraintLayout(context, attrs) {
     private val binding: InputPasswordViewBinding
     private var isPasswordVisible = false
+    var editText: TextInputEditText
 
     var text: String
         get() = binding.input.text.toString()
@@ -33,6 +35,7 @@ class InputPassword @JvmOverloads constructor(
     init {
         val inflater = LayoutInflater.from(context)
         binding = InputPasswordViewBinding.inflate(inflater, this)
+        editText = binding.input
 
         val set = intArrayOf(
             R.attr.title,
@@ -44,7 +47,6 @@ class InputPassword @JvmOverloads constructor(
         val title = a.getText(0) ?: ""
         val hint = a.getText(1) ?: ""
         val isEnabled = a.getBoolean(2, true)
-
 
         binding.title.isVisible = title.isNotBlank()
         binding.title.text = title

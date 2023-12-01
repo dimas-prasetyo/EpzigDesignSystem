@@ -19,6 +19,7 @@ class InputTextPlain @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : ConstraintLayout(context, attrs) {
     private val binding: InputTextPlainViewBinding
+    var editText: TextInputEditText
 
     var text: String
         get() = binding.input.text.toString()
@@ -27,6 +28,7 @@ class InputTextPlain @JvmOverloads constructor(
     init {
         val inflater = LayoutInflater.from(context)
         binding = InputTextPlainViewBinding.inflate(inflater, this)
+        editText = binding.input
 
         val set = intArrayOf(
             R.attr.title,

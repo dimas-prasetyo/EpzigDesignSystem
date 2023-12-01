@@ -18,6 +18,7 @@ class InputTextIcon @JvmOverloads constructor(
     private val binding: InputTextIconViewBinding
     var startIconOnClick: () -> Unit = {}
     var endIconOnClick: () -> Unit = {}
+    var editText: TextInputEditText
 
 
     var text: String
@@ -27,7 +28,7 @@ class InputTextIcon @JvmOverloads constructor(
     init {
         val inflater = LayoutInflater.from(context)
         binding = InputTextIconViewBinding.inflate(inflater, this)
-
+        editText = binding.input
 
         val set = intArrayOf(
             R.attr.title,

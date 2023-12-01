@@ -16,6 +16,7 @@ class InputTextAffix @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : ConstraintLayout(context, attrs) {
     private val binding: InputTextAffixViewBinding
+    var editText: TextInputEditText
 
     var text: String
         get() = binding.input.text.toString()
@@ -24,6 +25,7 @@ class InputTextAffix @JvmOverloads constructor(
     init {
         val inflater = LayoutInflater.from(context)
         binding = InputTextAffixViewBinding.inflate(inflater, this)
+        editText = binding.input
 
 
         val set = intArrayOf(
