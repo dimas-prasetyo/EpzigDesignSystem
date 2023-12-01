@@ -1,6 +1,10 @@
 # EpzigDesignSystem
 
-Required compileSdk 31
+Required:
+compileSdk 31
+minSdk 28
+
+
 # Getting started
 Step 1. Add the JitPack repository to your build file. Add it in your root setting.gradle at the end of repositories:
 ```gradle
