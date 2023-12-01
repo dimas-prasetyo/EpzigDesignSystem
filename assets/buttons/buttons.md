@@ -1,31 +1,35 @@
-# Typography
+# Buttons
 
-<img width="270" height="550" alt="Input Text Plain with Title" src="input_password.gif" /> 
+<img width="270" height="550" alt="Input Text Plain with Title" src="buttons.gif" /> 
 
+*   [Size](#size)
+*   [Style](#style)
+*   
+*   [Style](#style)
+
+## Size
+| Size      | Minimal Height      | Text Appearance |
+| --------- | ------------------- | --------------- |
+| Small     | 36dp                | `@style/subtitle`|
+| Medium    | 44dp                | `@style/body`  |
+| Big       | 56dp                | `@style/body`  |
+
+## Style
+
+## Primary ##
+<img width="270" height="100" alt="Input Text Plain with Title" src="buttons.gif" /> 
 In the layout:
 ```xml
-<TextView
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content"
-  android:text="Body"
-  android:textAppearance="@style/body"
+<Button
+  ...
+  style="@style/PrimaryButton.Small"
+/>
+<Button
+  ...
+  style="@style/PrimaryButton.Medium"
+/>
+<Button
+  ...
+  style="@style/PrimaryButton.Big"
 />
 ```
-
-| Style name              | Font Family            	| Text size
-| ---------------         | ---------------------------  | -----------------------------------------
-| headline1               | Inter SemiBold               | 36sp
-| headline2               | Inter SemiBold               | 30sp
-| headline3               | Inter SemiBold               | 24sp
-| headline4               | Inter SemiBold               | 20sp
-| title               | Inter SemiBold               | 18sp
-| title_bold               | Inter Bold                   | 18sp
-| body               | Inter SemiBold               | 16sp
-| body_bold               | Inter Bold                   | 16sp
-| subtitle               | Inter Regular                | 14sp
-| subtitle_semi_bold               | Inter SemiBold               | 14sp
-| subtitle_bold               | Inter Bold                   | 14sp
-| caption               | Inter Regular                | 12sp
-| caption_semi_bold               | Inter SemiBold               | 12sp
-| caption_bold               | Inter Bold                   | 12sp
-
