@@ -1,5 +1,5 @@
 # Inputs
-**Contents**
+This library offers a variety of custom input components designed to enhance user interaction. These inputs cater to different needs and include:
 
 *   [Input Text Plain](#input-text-plain)
 *   [Input Text Password](#input-text-password)
