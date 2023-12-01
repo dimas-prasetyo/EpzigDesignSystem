@@ -1,68 +1,51 @@
-# Dialogs
+# Snackbars
 **Contents**
 
-*   [Create Custom List](#create-custom-list)
-*   [Dialog Confirmation](#dialog-confirmation)
-*   [Dialog Text Only](#dialog_text_only)
-*   [Input Text Affix](#input-text-affix)
-*   [Input Text Icon](#input-text-icon)
-*   [Input Text Area](#input-text-area)
-*   [Input Text Dropdown](#input-text-dropdown)
 
-## Create Custom List
+*   [Snackbar Success](#snackbar-success)
+*   [Snackbar Error](#snackbar-error)
+*   [Snackbar Simple](#snackbar-simple)
+*   [Snackbar Action](#snackbar-action)
 
-```kt
-import com.dimasbintang.design_system.helper.DropdownMapper.addItemDropdown
-import com.dimasbintang.design_system.helper.BoxiconMapper.getDrawableBoxicon
-import com.dimasbintang.design_system.model.ItemDropdown
 
-val items = arrayListOf<ItemDropdown>()
-items.addItemDropdown("Alarm") // item only contains text
-items.addItemDropdown("Alarm", getDrawableBoxicon(this, "bx_alarm")) // item with start icon
-items.addItemDropdown("Alarm", null, getDrawableBoxicon(this, "bx_alarm")) // item with end icon
-items.addItemDropdown("Alarm", getDrawableBoxicon(this, "bx_alarm"), getDrawableBoxicon(this, "bx_plus")) // item with both start and end icon
-// getDrawableBoxicon(this, "icon_name")) function for get drawable by name
-```
-
-## Dialog Confirmation
-<img width="270" height="550" alt="Input Text Plain with Title" src="dialog_confirmation.gif" /> 
+## Snackbar Success
+<img width="270" height="550" alt="Snackbar success" src="snackbar_success.gif" /> 
 
 In the code:
 ```kt
-val dialog = DialogConfirmation("Title", "Message dialog confirmation", "Confirm", "Cancel")
-dialog.positiveListener = {
-    // action positive button got click
-    dialog.dismiss()
-}
-dialog.negativeListener = {
-    // action positive button got click
-    dialog.dismiss()
-}
-dialog.show(supportFragmentManager, null)
+// You can change the content of the success message and the duration of the snackbar appearance
+showSuccessSnackbar(this, "Success", Snackbar.LENGTH_SHORT) 
 ```
 
-## Dialog List 
-Text Only | Left Icon | Right Icon | Both Icon
------- | ------ | ------ | ------
-<img width="270" height="550" alt="Text Only" src="dialog_text_only.gif" /> | <img width="270" height="550" alt="Left Icon" src="dialog_left_icon.gif" /> | <img width="270" height="550" alt="Right Icon" src="dialog_right_icon.gif" /> | <img width="270" height="550" alt="Both Icon" src="dialog_both_icon.gif" />
+## Snackbar Error
+<img width="270" height="550" alt="Snackbar success" src="snackbar_error.gif" /> 
 
 In the code:
 ```kt
-val dialog = ListDialog(this, items, false)
-dialog.confirmListener = {
-    // action positive button got click
-}
-dialog.show(supportFragmentManager, null)
+// You can change the content of the error message and the duration of the snackbar appearance
+// The default duration of the snackbar is Snackbar.LENGTH_SHORT
+showErrorSnackbar(this, "Error")
 ```
 
-## Dialog List Multiple Select
-<img width="270" height="550" alt="Multiple Select" src="dialog_multiple.gif" /> 
+## Snackbar Simple
+<img width="270" height="550" alt="Snackbar success" src="snackbar_simple.gif" /> 
 
 In the code:
 ```kt
-val dialog = ListDialog(this, items, true)
-dialog.confirmListener = {
-    // action positive button got click
+// You can change the content of the message, icon and the duration of the snackbar appearance
+val icon = getDrawableBoxicon(this, "bx_alarm"
+showSimpleSnackbar(this, "Alarm", icon)
+```
+
+
+## Snackbar Action
+<img width="270" height="550" alt="Snackbar success" src="snackbar_action.gif" /> 
+
+In the code:
+```kt
+// You can change the content of the message, text button and the duration of the snackbar appearance
+showSnackbarAction(this, "Do some Action", "Action") {
+    // action
+    Toast.makeText(this, "Action from snackbar", Toast.LENGTH_SHORT).show()
 }
-dialog.show(supportFragmentManager, null)
 ```
